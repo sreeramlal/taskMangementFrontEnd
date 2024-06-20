@@ -15,7 +15,7 @@ const Todo = () => {
 
     const fetchTodos = async () => {
         try {
-            const response = await axios.get('http://localhost:3001/getTodoList');
+            const response = await axios.get('https://taskmangementbackend-1.onrender.com/getTodoList');
             setTodos(response.data);
         } catch (error) {
             console.error('Error fetching todos:', error);
